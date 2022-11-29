@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+        <div class="tenor-gif-embed inline" data-postid="24918269" data-share-method="host" data-aspect-ratio="1" data-width="6%"><a href="https://tenor.com/view/gawr-gura-spin-gif-24918269">Gawr Gura Sticker</a>from <a href="https://tenor.com/search/gawr-stickers">Gawr Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1 class="title inline">XXX's Todo List</h1>
+    </header>
+    <section class="card">
+        <form name="add_list" action="#">
+            <div>
+                <p class="inline">代辦事項</p>
+                <input type="text" id="todo_title" class="text" />
+            </div>
+            <div>
+                <p class="inline">到期日期</p>
+                <input class="inline date" id="month" type="number" min="1" max="12" placeholder="M" required />
+                <input class="date" id="date" type="number" min="1" max="31" placeholder="D" required />
+            </div>
+
+            <button id="submit" type="submit" class="submit">Add To List</button>
+        </form> 
+    </section>
+    
+
+    <section id="insert_section">
+
+    </section>
+  </body>
+  <script src="./app.js"></script>
+</html>
